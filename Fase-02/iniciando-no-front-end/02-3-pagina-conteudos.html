@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pagina-conteudos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Conteúdos</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     </div>
 
     <section class="cards">
-        <div class="card post-1">
+        <div class="card post-1" id="introducao-ao-dom">
             <div class="card_image-container">
                 <img src="https://blog.rocketseat.com.br/content/images/size/w2000/2020/06/introducao-dom-rocketseat-1.png" alt="Imagem card">
             </div>
@@ -27,7 +28,7 @@
             </div>
         </div>
 
-        <div class="card post-2">
+        <div class="card post-2" id="expo-sdk-38-melhorias-que-fazem-do-expo-uma-opcao-ainda-melhor">
             <div class="card_image-container">
                 <img src="https://blog.rocketseat.com.br/content/images/size/w2000/2020/07/blog-rocketseat-atualizacoes-expo-sdk-38.png" alt="Imagem card">
             </div>
@@ -41,7 +42,7 @@
             </div>
         </div>
 
-        <div class="card post-3">
+        <div class="card post-3" id="o-que-e-readme-e-porque-e-tao-importante">
             <div class="card_image-container">
                 <img src="https://blog.rocketseat.com.br/content/images/size/w2000/2020/07/o-que-e-readme.png" alt="Imagem card">
             </div>
@@ -55,5 +56,19 @@
             </div>
         </div>
     </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
