@@ -1,0 +1,89 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+:root {
+    --color-green: #50fa7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #1E1E1E;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding-top: 50px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.7fr 0.7fr 1fr;
+    grid-template-areas: 
+        'box-1 box-1 box-1'
+        'box-2 box-2 box-2'
+        'box-3 box-3 box-3';
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.box-1 {
+    grid-area: box-1;
+}
+
+.box-1 img {
+    border-radius: 50%;
+    border: 3px solid var(--color-green);
+    height: 290px;
+}
+
+.box-2 {
+    grid-area: box-2;
+}
+
+.box-2 h1 {
+    padding-top: 10px;
+    font-size: 42px;
+}
+
+.box-2 h2 {
+    padding-top: 30px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.box-3 {
+    grid-area: box-3;
+}
+
+.box-3 a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-green);
+}
+
+.box-3 a:hover {
+    color: var(--color-green);
+    transition: color 700ms;
+}
+
+@media only screen and  (max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.6fr 0.3fr;
+        grid-template-areas: 
+        "box-1"
+        "box-2"
+        "box-3";
+    }
+
+    .box-3 {
+        padding-top: 20px;
+    }
+}

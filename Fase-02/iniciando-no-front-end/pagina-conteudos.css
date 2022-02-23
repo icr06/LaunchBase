@@ -1,0 +1,97 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #1E1E1E;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 64px;
+}
+
+.cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 51px;
+    height: 100vh;
+    max-width: 1200px;
+    max-height: 500px;
+    margin: 0 auto;
+    grid-template-areas:
+        'post-1 post-2 post-3'
+        'post-1 post-2 post-3';
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    position: relative;
+}
+
+.post-1 {
+    grid-area: post-1;
+}
+
+.post-2 {
+    grid-area: post-2;
+}
+
+.post-3 {
+    grid-area: post-3;
+}
+
+.card_image-container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_content,
+.card_info {
+    color: black;
+}
+
+.card_content {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.card_info {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 79px 0.2fr 1fr;
+    font-size: 12px;
+    align-items: center;
+    letter-spacing: .2px;
+    bottom: 24px;
+    left: 24px;
+}
+
+@media only screen and  (max-width: 550px) {
+    .cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "post-1"
+        "post-2"
+        "post-3";
+        
+        padding: 24px;
+    }
+
+    .card_content{
+        padding-bottom: 60px;
+    }
+}
