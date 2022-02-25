@@ -124,6 +124,14 @@ h1 {
     cursor: pointer;
 }
 
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
+}
+
 /* MODAL ATIVO */
 
 .modal-overlay.active{
@@ -136,4 +144,9 @@ iframe {
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+.modal.maximize {
+    width: 100%;
+    height: 100%;
 }
