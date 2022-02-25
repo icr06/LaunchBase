@@ -71,9 +71,10 @@ h1 {
 .card_info {
     position: absolute;
     display: grid;
-    grid-template-columns: 79px 0.2fr 1fr;
+    grid-template-columns: auto 0.2fr 1fr;
     font-size: 12px;
     align-items: center;
+    text-align: center;
     letter-spacing: .2px;
     bottom: 24px;
     left: 24px;
