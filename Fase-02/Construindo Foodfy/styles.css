@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.caixa {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 img {
+    padding-top: 36.1px;
+    padding-bottom: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 38px;
+    left: 213px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #111111;
+}
+
+.caixa-2 {
+    margin: 0 auto;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    position: relative;
+    width: 940px;
+    height: 366px;
+}
+
+.caixa-2 h2 {
+    position: absolute;
+    left: 60px;
+    top: 117px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.caixa-2 p {
+    position: absolute;
+    left: 60px;
+    top: 165px;
+    width: 316px;
+    font-size: 18px;
+}
+
+.caixa-2 img {
+    position: absolute;
+    right: 100px;
+    top: 66px;
+}
+
+h3 {
+    max-width: 940px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.caixa-3 {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card_image img{
+    border-radius: 15px;
+    width: 300px;
+}
+
+.card_content p {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.card_info p {
+    font-size: 14px;
+    color: #777777;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+footer p {
+    padding: 23px;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+}
